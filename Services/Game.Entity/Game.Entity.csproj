@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{563125A1-BEC7-42B7-A827-C73C4A97A8F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game.Entity</RootNamespace>
+    <AssemblyName>Game.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Game.Kernel">
+      <HintPath>..\..\..\Library\Game.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Game.Utils">
+      <HintPath>..\..\..\Library\Game.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\AccountPay.cs" />
+    <Compile Include="Accounts\AccountsAgent.cs" />
+    <Compile Include="Accounts\AccountsFace.cs" />
+    <Compile Include="Accounts\AccountsInfo.cs" />
+    <Compile Include="Accounts\AccountsMember.cs" />
+    <Compile Include="Accounts\AccountsProtect.cs" />
+    <Compile Include="Accounts\AccountsSignin.cs" />
+    <Compile Include="Accounts\GameIdentifier.cs" />
+    <Compile Include="Accounts\IndividualDatum.cs" />
+    <Compile Include="Accounts\MemberProperty.cs" />
+    <Compile Include="Accounts\ReserveIdentifier.cs" />
+    <Compile Include="Accounts\SystemGrantCount.cs" />
+    <Compile Include="Accounts\SystemStatusInfo.cs" />
+    <Compile Include="Accounts\TaskInfo.cs" />
+    <Compile Include="Accounts\User.cs" />
+    <Compile Include="Accounts\UserInfo.cs" />
+    <Compile Include="Accounts\UserTicketInfo.cs" />
+    <Compile Include="GameMatch\AndroidManager.cs" />
+    <Compile Include="GameMatch\ConfineAddress.cs" />
+    <Compile Include="GameMatch\ConfineMachine.cs" />
+    <Compile Include="GameMatch\GameColumnItem.cs" />
+    <Compile Include="GameMatch\GameHistoryScore.cs" />
+    <Compile Include="GameMatch\GameProperty.cs" />
+    <Compile Include="GameMatch\GameScoreInfo.cs" />
+    <Compile Include="GameMatch\GameScoreLocker.cs" />
+    <Compile Include="GameMatch\MatchImmediate.cs" />
+    <Compile Include="GameMatch\MatchInfo.cs" />
+    <Compile Include="GameMatch\MatchLockTime.cs" />
+    <Compile Include="GameMatch\MatchPublic.cs" />
+    <Compile Include="GameMatch\MatchReward.cs" />
+    <Compile Include="GameMatch\RecordDrawInfo.cs" />
+    <Compile Include="GameMatch\RecordDrawScore.cs" />
+    <Compile Include="GameMatch\RecordUserInout.cs" />
+    <Compile Include="GameMatch\StreamMatchFeeInfo.cs" />
+    <Compile Include="GameMatch\StreamMatchHistory.cs" />
+    <Compile Include="GameMatch\SystemStreamInfo.cs" />
+    <Compile Include="NativeWeb\Activity.cs" />
+    <Compile Include="NativeWeb\admin.cs" />
+    <Compile Include="NativeWeb\Ads.cs" />
+    <Compile Include="NativeWeb\AwardInfo.cs" />
+    <Compile Include="NativeWeb\AwardOrder.cs" />
+    <Compile Include="NativeWeb\AwardType.cs" />
+    <Compile Include="NativeWeb\ConfigInfo.cs" />
+    <Compile Include="NativeWeb\GameFeedbackInfo.cs" />
+    <Compile Include="NativeWeb\GameIssueInfo.cs" />
+    <Compile Include="NativeWeb\GameMatchInfo.cs" />
+    <Compile Include="NativeWeb\GameMatchUserInfo.cs" />
+    <Compile Include="NativeWeb\GameMobileInfo.cs" />
+    <Compile Include="NativeWeb\GameRulesInfo.cs" />
+    <Compile Include="NativeWeb\LossReport.cs" />
+    <Compile Include="NativeWeb\NewReader.cs" />
+    <Compile Include="NativeWeb\News.cs" />
+    <Compile Include="NativeWeb\Notice.cs" />
+    <Compile Include="NativeWeb\SinglePage.cs" />
+    <Compile Include="Platform\DataBaseInfo.cs" />
+    <Compile Include="Platform\GameGameItem.cs" />
+    <Compile Include="Platform\GameKindItem.cs" />
+    <Compile Include="Platform\GameNodeItem.cs" />
+    <Compile Include="Platform\GamePageItem.cs" />
+    <Compile Include="Platform\GameProperty.cs" />
+    <Compile Include="Platform\GamePropertyType.cs" />
+    <Compile Include="Platform\GameRoomInfo.cs" />
+    <Compile Include="Platform\GameTypeItem.cs" />
+    <Compile Include="Platform\MobileKindItem.cs" />
+    <Compile Include="Platform\OnLineStatusInfo.cs" />
+    <Compile Include="Platform\SigninConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Record\RecordAccountsExpend.cs" />
+    <Compile Include="Record\RecordConvertPresent.cs" />
+    <Compile Include="Record\RecordConvertUserMedal.cs" />
+    <Compile Include="Record\RecordEncashPresent.cs" />
+    <Compile Include="Record\RecordGrantClearFlee.cs" />
+    <Compile Include="Record\RecordGrantClearScore.cs" />
+    <Compile Include="Record\RecordGrantExperience.cs" />
+    <Compile Include="Record\RecordGrantGameID.cs" />
+    <Compile Include="Record\RecordGrantGameScore.cs" />
+    <Compile Include="Record\RecordGrantMember.cs" />
+    <Compile Include="Record\RecordGrantTreasure.cs" />
+    <Compile Include="Record\RecordInsure.cs" />
+    <Compile Include="Record\RecordPasswdExpend.cs" />
+    <Compile Include="Record\RecordSendPresent.cs" />
+    <Compile Include="Record\RecordSendProperty.cs" />
+    <Compile Include="Treasure\AndroidManager.cs" />
+    <Compile Include="Treasure\AppReceiptInfo.cs" />
+    <Compile Include="Treasure\AppReceiptInfo2.cs" />
+    <Compile Include="Treasure\ConfineAddress.cs" />
+    <Compile Include="Treasure\ConfineMachine.cs" />
+    <Compile Include="Treasure\GameColumnItem.cs" />
+    <Compile Include="Treasure\GameProperty.cs" />
+    <Compile Include="Treasure\GameScoreInfo.cs" />
+    <Compile Include="Treasure\GameScoreLocker.cs" />
+    <Compile Include="Treasure\GlobalAppInfo.cs" />
+    <Compile Include="Treasure\GlobalCheckIn.cs" />
+    <Compile Include="Treasure\GlobalLivcard.cs" />
+    <Compile Include="Treasure\GlobalShareInfo.cs" />
+    <Compile Include="Treasure\GlobalSpreadInfo.cs" />
+    <Compile Include="Treasure\LivcardAssociator.cs" />
+    <Compile Include="Treasure\LivcardBuildStream.cs" />
+    <Compile Include="Treasure\LotteryConfig.cs" />
+    <Compile Include="Treasure\LotteryReturn.cs" />
+    <Compile Include="Treasure\LotteryUserInfo.cs" />
+    <Compile Include="Treasure\LotteryItem.cs" />
+    <Compile Include="Treasure\MemberCard.cs" />
+    <Compile Include="Treasure\MemberInfo.cs" />
+    <Compile Include="Treasure\OnLineOrder.cs" />
+    <Compile Include="Treasure\RecordAgentInfo.cs" />
+    <Compile Include="Treasure\RecordCheckIn.cs" />
+    <Compile Include="Treasure\RecordDrawInfo.cs" />
+    <Compile Include="Treasure\RecordDrawScore.cs" />
+    <Compile Include="Treasure\RecordInsure.cs" />
+    <Compile Include="Treasure\RecordLogonError.cs" />
+    <Compile Include="Treasure\RecordMachinePresent.cs" />
+    <Compile Include="Treasure\RecordSpreadInfo.cs" />
+    <Compile Include="Treasure\RecordUserInout.cs" />
+    <Compile Include="Treasure\RecordUserRevenue.cs" />
+    <Compile Include="Treasure\RecordWriteScoreError.cs" />
+    <Compile Include="Treasure\Return91DetailInfo.cs" />
+    <Compile Include="Treasure\ReturnAppDetailInfo.cs" />
+    <Compile Include="Treasure\ReturnDayDetailInfo.cs" />
+    <Compile Include="Treasure\ReturnDouwanDetailInfo.cs" />
+    <Compile Include="Treasure\ReturnKQDetailInfo.cs" />
+    <Compile Include="Treasure\ReturnVBDetailInfo.cs" />
+    <Compile Include="Treasure\ReturnYPDetailInfo.cs" />
+    <Compile Include="Treasure\ShareDetailInfo.cs" />
+    <Compile Include="Treasure\ShareDetialInfo.cs" />
+    <Compile Include="Treasure\StreamPlayPresent.cs" />
+    <Compile Include="Treasure\StreamScoreInfo.cs" />
+    <Compile Include="Treasure\StreamShareInfo.cs" />
+    <Compile Include="Treasure\SystemStreamInfo.cs" />
+    <Compile Include="Treasure\UserCurrencyInfo.cs" />
+    <Compile Include="Treasure\UserGameData.cs" />
+    <Compile Include="Treasure\UserGameInfo_Line.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

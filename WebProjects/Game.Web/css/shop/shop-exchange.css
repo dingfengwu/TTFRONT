@@ -1,0 +1,28 @@
+@import "shop.css";
+.ui-main-details {min-height: 1090px;}
+.ui-goods-info table { width: 670px; margin-top: 20px;}
+.ui-goods-info th {
+  border: 1px solid #ddd;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  cursor: default;
+  padding: 0 5px;
+}
+.ui-goods-info td {text-align: center; padding: 5px; height:64px;}
+.ui-goods-info td>img {vertical-align: middle; margin-right: 10px; max-height: 80px; max-width: 80px;}
+.ui-goods-info a>img {vertical-align: middle;}
+.ui-goods-info tbody {border: 1px solid #ddd;}
+.ui-exchange-info ul {padding: 20px 0 0 50px;}
+.ui-exchange-info li {margin-bottom: 20px;}
+.ui-exchange-info li>label {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  width: 90px;
+  text-align: right;
+}
+.ui-shop-submit {padding-left: 95px;}
+.ui-shop-submit input {margin-right: 20px;}

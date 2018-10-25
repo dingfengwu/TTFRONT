@@ -1,0 +1,224 @@
+body { background: #efefef; }
+a { color: #666; }
+a:hover { outline: none; color: #666 }
+.ui-mobile-box { margin: 0 auto; position: relative; padding-bottom: 3em; }
+.ui-banner {
+  margin: 0 auto; position: relative;
+  overflow: hidden; visibility: hidden; background: #efefef;
+}
+.ui-banner-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.ui-banner-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.ui-banner-wrap img {
+  box-shadow: 1px 1px 2px #c2c2c2;
+  width: 100%; display: block;
+}
+.ui-banner-nav { position: absolute; bottom: 10px; width: 100%; text-align: center; }
+.ui-banner-nav li {
+  background: #fff; width: 8px; height: 8px; border-radius: 5px;
+  display: inline-block; opacity: 0.8; cursor: pointer; margin: 0 2px;
+}
+.ui-banner li.active {
+  background: red; opacity: 1;
+}
+.ui-head {
+  height: 45px; line-height: 45px; text-align: center;
+  background: -moz-linear-gradient(top, #ffac04, #ff9c00);
+  background: -o-linear-gradient(top, #ffac04, #ff9c00);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffac04), to(#ff9c00));
+  background: -ms-linear-gradient(top, #ffac04, #ff9c00);
+  background: linear-gradient(top, #ffac04, #ff9c00);
+}
+.ui-head img { width: 11.3em; vertical-align: middle }
+/*ui-hot-recommend*/
+
+.ui-game-list li a { outline: none; box-sizing: border-box; }
+.ui-game-list li a:hover { text-decoration: none; }
+.ui-game-list li span { vertical-align: middle; }
+.ui-applist-wrap { display: block; margin-right: 5.3em; }
+.ui-game-list li {
+  background: -moz-linear-gradient(top, #fbfbfb, #f3f3f3);
+  background: -o-linear-gradient(top, #fbfbfb, #f3f3f3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#f3f3f3));
+  background: -ms-linear-gradient(top, #fbfbfb, #f3f3f3);
+  background: linear-gradient(top, #fbfbfb, #f3f3f3);
+  border-bottom: 1px solid #d5d5d5; position: relative;
+  box-shadow: 0px 1px 0px #fff inset;
+  height: 4.8em; padding: 1.5em 1em;
+}
+.ui-game-list li:hover {
+  background: -moz-linear-gradient(top, #e6e6e6, #fbfbfb);
+  background: -o-linear-gradient(top, #e6e6e6, #fbfbfb);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e6e6e6), to(#fbfbfb));
+  background: -ms-linear-gradient(top, #e6e6e6, #fbfbfb);
+  background: linear-gradient(top, #e6e6e6, #fbfbfb); cursor: pointer;
+}
+.ui-game-ico img { width: 5.3em; height: 5.3em; }
+.ui-game-list li b { display: inline-block; width: 100%; }
+.ui-game-score { overflow: hidden; display: inline-block; }
+.ui-game-score img { width: 5em; }
+.ui-score1 {
+  background-position: 0 0;
+}
+.ui-score2 {
+  background-position: 0 -16px;
+}
+.ui-score3 {
+  background-position: 0 -32px;
+}
+.ui-score4 {
+  background-position: 0 -48px;
+}
+.ui-score5 {
+  background-position: 0 -64px;
+}
+.ui-score6 {
+  background-position: 0 -80px;
+}
+a.ui-game-download { position: absolute; right: 1em; top: 3em; }
+a.ui-game-download { padding: 0.5em 1.3em;
+  font-family: Microsoft Yahei, sans-serif; font-weight: bold; color: #666;
+  background-color: #fbfbfb;
+  background: -moz-linear-gradient(top, #fbfbfb, #f3f3f3);
+  background: -o-linear-gradient(top, #fbfbfb, #f3f3f3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#f3f3f3));
+  background: -ms-linear-gradient(top, #fbfbfb, #f3f3f3);
+  background: linear-gradient(top, #fbfbfb, #f3f3f3);
+  border: 1px solid #d8d8d8;
+  border-radius: 0.4em; box-shadow: 0px 2px 2px #eaeaea;
+}
+a.ui-game-download:hover {
+  background-color: #fbfbfb;
+  background: -moz-linear-gradient(top, #e7e7e7, #f9f9f9);
+  background: -o-linear-gradient(top, #e7e7e7, #f9f9f9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7e7e7), to(#f9f9f9));
+  background: -ms-linear-gradient(top, #e7e7e7, #f9f9f9);
+  background: linear-gradient(top, #e7e7e7, #f9f9f9);
+  border: 1px solid #c6c6c6; text-decoration: none;
+}
+.download { display: block; text-align: center }
+.ui-game-download p { display: block; color: #666; margin-top: 3px; text-align: center }
+.ui-hot-recommend h1 {
+  font-size: 1.4em; color: #3e3e3e; font-family: Microsoft Yahei, sans-serif;
+  background: #efefef url(/Mobile/Img/mobile/h1_bot.gif) repeat-x bottom;
+  padding: 7px 20px; font-weight: bold;
+}
+.ui-game-ico { margin-right: 1em; }
+.ui-game-info, .ui-game-ico { display: inline-block; vertical-align: middle; }
+.ui-game-info { vertical-align: top; }
+.ui-game-info b {
+  font-size: 1.3em; color: #333; font-family: Microsoft Yahei, sans-serif; font-weight: bold; vertical-align: middle;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.ui-game-info p {
+  font-size: 1em; color: #999; height: 1.5em;
+  width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.ui-game-mat { color: #aaa; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ui-foot-menu {
+  position: fixed; bottom: 0; z-index: 99; width: 100%;
+  background-color: #fbfbfb;
+  background: -moz-linear-gradient(top, #f8f8f8, #efefef);
+  background: -o-linear-gradient(top, #f8f8f8, #efefef);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#efefef));
+  background: -ms-linear-gradient(top, #f8f8f8, #efefef);
+  background: linear-gradient(top, #f8f8f8, #efefef);
+  border-top: 1px solid #c6c6c6;
+}
+.ui-foot-menu li {
+  width: 50%; float: left;
+  text-align: left; padding: .7em 0; font-size: 1em;
+  border-left: 1px solid #c6c6c6; margin-left: -1px;
+}
+.ui-foot-menu li a {
+  display: block; text-decoration: none;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: #666; font-weight: bold;
+}
+.ui-foot-menu li .ui-tel {
+  text-indent: 45%;
+  width: 100%;
+  background: url(/Mobile/Img/mobile/tel_1.png) no-repeat 26% center;
+  background-size: 24px 24px;
+}
+.ui-foot-menu li .ui-qq {
+  text-indent: 45%;
+  width: 100%;
+  background: url(/Mobile/Img/mobile/png_2.png) no-repeat 26% center;
+  background-size: 24px 24px;
+}
+.ui-weixin-tip {
+  position: fixed; left: 0; top: 0;
+  background: rgba(0, 0, 0, 0.8); filter: alpha(opacity=80);
+  width: 100%; height: 100%; z-index: 100;
+}
+.ui-weixin-tip p {
+  text-align: center; margin-top: 10%; padding: 0 5%; position: relative; box-sizing: border-box;
+}
+.ui-weixin-tip img {
+  width: 100%;
+  max-width: 565px;
+}
+.ui-weixin-tip .close {
+  color: #fff;
+  padding: 5px;
+  font: bold 20px/20px simsun;
+  text-shadow: 0 1px 0 #ddd;
+  position: absolute;
+  top: 0; left: 5%;
+}
+@media only screen and (max-width: 300px) {
+  body { font-size: 8.33333px !important; }
+
+}
+@media only screen and (max-width: 310px) and (min-width: 300px) {
+  body { font-size: 8.33333px !important; }
+
+}
+@media only screen and (max-width: 320px) and (min-width: 310px) {
+  body { font-size: 8.88889px !important; }
+
+}
+@media only screen and (max-width: 360px) and (min-width: 320px) {
+  body { font-size: 8.88889px !important; }
+
+}
+@media only screen and (max-width: 360px) and (min-width: 350px) {
+  body { font-size: 10px !important; }
+  .viewport { max-width: 360px; }
+}
+@media only screen and (max-width: 480px) and (min-width: 360px) {
+  body { font-size: 13.33333px !important; }
+}
+@media only screen and (max-width: 480px) and (min-width: 470px) {
+  body { font-size: 13.33333px !important; }
+}
+@media only screen and (max-width: 560px) and (min-width: 480px) {
+  body { font-size: 15px !important; }
+  .ui-game-titel { font-size: 25px; }
+  .ui-game-pic img { width: 6em; height: 6em; }
+}
+@media only screen and (max-width: 570px) and (min-width: 560px) {
+  body { font-size: 15.83333px !important; }
+}
+@media only screen and (max-width: 640px) and (min-width: 570px) {
+  body { font-size: 15.83333px; }
+}
+@media only screen and (max-width: 640px) and (min-width: 630px) {
+  body { font-size: 16.77778px !important; }
+}
+@media only screen and (max-width: 710px) and (min-width: 640px) {
+  body { font-size: 18.77778px !important; }
+}
+@media only screen and (max-width: 1500px) and (min-width: 710px) {
+  body { font-size: 18.77778px !important; }
+}
